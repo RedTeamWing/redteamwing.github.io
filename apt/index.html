@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>APT分析 | RedTeaming</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/img/redteam.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="RedTeaming知识星球-WiKi">
+    <meta name="keywords" content="RedTeam,RedTeamWing,RedTeaming,信息安全,网络安全，红蓝对抗,红队行动,渗透测试">
+    <meta name="baidu-site-verification" content="482fd3a21f12d6c3a2285ac992936bde">
+    <meta name="theme-color" content="#5deff9">
+    <link rel="preload" href="/assets/css/0.styles.ca4b7d32.css" as="style"><link rel="preload" href="/assets/js/app.92cba67a.js" as="script"><link rel="preload" href="/assets/js/2.2a3a09dd.js" as="script"><link rel="preload" href="/assets/js/3.2edbb1cd.js" as="script"><link rel="preload" href="/assets/js/11.9192eb12.js" as="script"><link rel="prefetch" href="/assets/js/10.15c7f3a3.js"><link rel="prefetch" href="/assets/js/12.dd198627.js"><link rel="prefetch" href="/assets/js/13.2cd64638.js"><link rel="prefetch" href="/assets/js/14.80bf7b63.js"><link rel="prefetch" href="/assets/js/15.c8ebe2c6.js"><link rel="prefetch" href="/assets/js/16.f09f860f.js"><link rel="prefetch" href="/assets/js/17.d7119451.js"><link rel="prefetch" href="/assets/js/18.176fc539.js"><link rel="prefetch" href="/assets/js/19.fb832fea.js"><link rel="prefetch" href="/assets/js/20.cedca1ec.js"><link rel="prefetch" href="/assets/js/21.5510fa53.js"><link rel="prefetch" href="/assets/js/22.c0a323b3.js"><link rel="prefetch" href="/assets/js/23.7fffe162.js"><link rel="prefetch" href="/assets/js/24.94f250ba.js"><link rel="prefetch" href="/assets/js/25.f54d1fb7.js"><link rel="prefetch" href="/assets/js/26.b33de755.js"><link rel="prefetch" href="/assets/js/27.e375fa43.js"><link rel="prefetch" href="/assets/js/28.ac53f775.js"><link rel="prefetch" href="/assets/js/29.d4a12cb9.js"><link rel="prefetch" href="/assets/js/30.ddd27f47.js"><link rel="prefetch" href="/assets/js/31.8f06f923.js"><link rel="prefetch" href="/assets/js/32.e0d832a8.js"><link rel="prefetch" href="/assets/js/33.313a4fa5.js"><link rel="prefetch" href="/assets/js/34.9bc905e8.js"><link rel="prefetch" href="/assets/js/4.453e83fe.js"><link rel="prefetch" href="/assets/js/5.da19ce23.js"><link rel="prefetch" href="/assets/js/6.006833f3.js"><link rel="prefetch" href="/assets/js/7.308b3409.js"><link rel="prefetch" href="/assets/js/8.2a7e5085.js"><link rel="prefetch" href="/assets/js/9.41ab89bc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ca4b7d32.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/redteam.png" alt="RedTeaming" class="logo"> <span class="site-name can-hide">RedTeaming</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/BypassAV/" class="nav-link">🤡BypassAV</a></div><div class="nav-item"><a href="/exploit/" class="nav-link">🍓漏洞利用</a></div><div class="nav-item"><a href="/weapon/" class="nav-link">🍀漏洞武器库</a></div><div class="nav-item"><a href="/Phishing/" class="nav-link">🍯钓鱼攻击</a></div><div class="nav-item"><a href="/internal/" class="nav-link">🍭内网渗透</a></div><div class="nav-item"><a href="/apt/" aria-current="page" class="nav-link router-link-exact-active router-link-active">🇨🇳apt分析</a></div><div class="nav-item"><a href="/CodeAudit/" class="nav-link">🖥代码审计</a></div><div class="nav-item"><a href="/Penetration/" class="nav-link">🥝渗透测试</a></div><div class="nav-item"><a href="/reverse/" class="nav-link">🔨二进制安全</a></div><div class="nav-item"><a href="/MISC/" class="nav-link">💎MISC</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/RedTeamWing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://i.loli.net/2020/12/23/2LlibEtVrvZoINa.png"> <div class="blogger-info"><h3>Wing</h3> <span>less talk more work!</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/BypassAV/" class="nav-link">🤡BypassAV</a></div><div class="nav-item"><a href="/exploit/" class="nav-link">🍓漏洞利用</a></div><div class="nav-item"><a href="/weapon/" class="nav-link">🍀漏洞武器库</a></div><div class="nav-item"><a href="/Phishing/" class="nav-link">🍯钓鱼攻击</a></div><div class="nav-item"><a href="/internal/" class="nav-link">🍭内网渗透</a></div><div class="nav-item"><a href="/apt/" aria-current="page" class="nav-link router-link-exact-active router-link-active">🇨🇳apt分析</a></div><div class="nav-item"><a href="/CodeAudit/" class="nav-link">🖥代码审计</a></div><div class="nav-item"><a href="/Penetration/" class="nav-link">🥝渗透测试</a></div><div class="nav-item"><a href="/reverse/" class="nav-link">🔨二进制安全</a></div><div class="nav-item"><a href="/MISC/" class="nav-link">💎MISC</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/RedTeamWing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/BypassAV/" class="sidebar-link">免杀</a></li><li><a href="/exploit/" class="sidebar-link">漏洞利用</a></li><li><a href="/weapon/" class="sidebar-link">漏洞武器库</a></li><li><a href="/Phishing/" class="sidebar-link">钓鱼攻击</a></li><li><a href="/internal/" class="sidebar-link">内网渗透</a></li><li><a href="/apt/" aria-current="page" class="active sidebar-link">APT分析</a></li><li><a href="/CodeAudit/" class="sidebar-link">代码审计</a></li><li><a href="/Penetration/" class="sidebar-link">渗透测试</a></li><li><a href="/reverse/" class="sidebar-link">二进制安全</a></li><li><a href="/MISC/" class="sidebar-link">MISC</a></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper bg-style-1"><!----> <div class="theme-vdoing-content theme-vdoing-content" data-v-c4ab00f8><div class="column-wrapper" data-v-c4ab00f8><img src="/img/web.png" data-v-c4ab00f8> <dl class="column-info" data-v-c4ab00f8><dt class="title" data-v-c4ab00f8>APT分析</dt> <dd class="description" data-v-c4ab00f8>APT分析文章</dd></dl></div> <div class="catalogue-wrapper" data-v-c4ab00f8><div class="catalogue-title" data-v-c4ab00f8>目录</div> <div class="catalogue-content" data-v-c4ab00f8><dl class="inline" data-v-c4ab00f8><dt data-v-c4ab00f8><a href="/pages/3ee8d8/" data-v-c4ab00f8>1. index</a></dt></dl></div></div></div> <div class="content-wrapper"><!----> <!----> <div class="page-slot page-slot-top"><!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+     <ins class="adsbygoogle"
+          style="display:inline-block;width:100%;max-height:90px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6625304284"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="theme-vdoing-content content__default"><p>Wing</p></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=APT" title="标签">#APT</a></div> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/internal/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">内网渗透</div></a> <a href="/CodeAudit/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">代码审计</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/internal/" class="prev">内网渗透</a></span> <span class="next"><a href="/CodeAudit/">代码审计</a>→
+      </span></p></div></div></div> <div class="article-list no-article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/324fc4/"><div>SockOverRdp</div></a> <span>12-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/d25aae/"><div>Go武器化教程</div></a> <span>12-26</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/9117ef/"><div>Exchange</div></a> <span>12-26</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:redteam@aliyun.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/RedTeamWing" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://twitter.com/RedTeamWing" title="推特" target="_blank" class="iconfont icon-erji"></a></div> <div class="busuanzi"><p>
+      Wing已运营本站:  
+    </p> <span id="busuanzi_container_site_pv" style="display:none">
+    本站总访问量
+    <span id="busuanzi_value_site_pv"></span>次
+    <span class="post-meta-divider">|</span></span> <span id="busuanzi_container_site_uv" style="display:none">
+    本站访客数
+    <span id="busuanzi_value_site_uv"></span>人
+  </span></div> <a href="https://github.com/redteamwing/" target="_blank" title="本站主题">RedTeaming</a> 
+    | Copyright © 2020-2020
+    <span>Wing | <a href="https://weibo.com/u/6077156187?topnav=1&wvr=6&topsug=1" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">跟随系统</li><li class="iconfont icon-rijianmoshi">浅色模式</li><li class="iconfont icon-yejianmoshi">深色模式</li><li class="iconfont icon-yuedu">阅读模式</li></ul></div></div> <!----> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><i class="close-but">×</i> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;max-width:160px;max-height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.92cba67a.js" defer></script><script src="/assets/js/2.2a3a09dd.js" defer></script><script src="/assets/js/3.2edbb1cd.js" defer></script><script src="/assets/js/11.9192eb12.js" defer></script>
+  </body>
+</html>
